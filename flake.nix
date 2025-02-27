@@ -38,7 +38,8 @@
             jdk17
           ];
           shellHook = ''
-            export ANDROID_HOME="${androidPkgs.androidsdk}/libexec/android-sdk";
+            export ANDROID_HOME="${androidPkgs.androidsdk}/libexec/android-sdk"
+            ./gradlew assembleApkstoreRelease
           '';
         };
       };
